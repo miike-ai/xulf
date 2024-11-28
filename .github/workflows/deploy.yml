@@ -8,7 +8,7 @@ on:
       - Dockerfile
       - docker-compose.yml
       - setup.py
-      - .github/workflows/publish.yml
+      - .github/workflows/deploy.yml
 
 jobs:
   build-and-push:
@@ -37,5 +37,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/flux-fp8-setup:latest
+          tags: ghcr.io/${{ github.repository_owner }}/xulf:latest
 
